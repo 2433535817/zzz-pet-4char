@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "node --test --experimental-strip-types tests/*.test.ts",
+    "test": "node --test --experimental-strip-types tests/appEvents.test.ts tests/characterFacing.test.ts tests/diagnostics.test.ts tests/groupLayout.test.ts tests/idleRandomActions.test.ts tests/liftPoseGeometry.test.ts tests/nativeDragGesture.test.ts tests/petFeedbackVisibility.test.ts tests/petGazeIntent.test.ts tests/petInteractionController.test.ts tests/petRoamingController.test.ts tests/petScale.test.ts tests/pomodoro.test.ts tests/pomodoroWindow.test.ts tests/roamingGeometry.test.ts tests/startupState.test.ts tests/windowLiftController.test.ts tests/windowLiftGeometry.test.ts",
     "preview": "vite preview",
     "tauri": "tauri",
     "validate:phase2": "node scripts/validate-phase2.mjs",
