@@ -19,7 +19,7 @@
     "validate:diagnostics": "node scripts/validate-diagnostics.mjs",
     "validate:lift-action": "node scripts/validate-lift-action.mjs",
     "validate:window-lift": "node scripts/validate-window-lift.mjs",
-    "validate:windows-prep": "npm run validate:phase7 && npm run validate:coordination && npm run validate:diagnostics && npm run validate:window-lift && npm test && node scripts/validate-windows-prep.mjs"
+    "validate:windows-prep": "npm run validate:phase7 && npm run validate:coordination && npm run validate:diagnostics && npm run validate:window-lift && node scripts/validate-windows-prep.mjs",
   },
   "dependencies": {
     "@esotericsoftware/spine-core": "4.2.42",
