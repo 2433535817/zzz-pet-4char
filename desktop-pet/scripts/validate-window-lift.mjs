@@ -20,7 +20,7 @@ const [catalogText, controller, geometry, app, state, rust, tauriLib, cargo, set
 ]);
 const catalog = JSON.parse(catalogText);
 
-assert(catalog.actions.length === 3, "托举清单没有覆盖三名角色");
+assert(catalog.actions.length === 4, "托举清单没有覆盖四名角色");
 for (const action of catalog.actions) {
   assert(action.contactSlots?.length === 2, `${action.characterId} 缺少手掌网格映射`);
   assert(action.snapDistanceCss >= 8, `${action.characterId} 吸附距离无效`);
