@@ -15,7 +15,9 @@ export const QIANXIA2: CharacterDefinition = {
   fitPadding: 0.9,
   behavior: {
     hoverOverlay: "表情_眯眼",
-    dragOverlay: "表情_无语",
+    // 注意：模型自带的「表情_无语」会把瞳孔和眼白整块染成 000000ff（纯黑），
+    // 拖动时用它会变成黑眼，这里改用正常表情。
+    dragOverlay: "表情_正常",
     coordination: {
       visualWidthCss: 208,
       preferredSpacingCss: 46,
@@ -56,7 +58,7 @@ export const QIANXIA2: CharacterDefinition = {
       rapidClick: [
         { action: "动作_被戳穿_loop", overlay: "表情_生气", weight: 3 },
         { action: "动作_摸头loop", overlay: "表情_困扰_虚张声势", weight: 2 },
-        { action: "动作_演讲loop", overlay: "表情_无语", weight: 1 },
+        { action: "动作_演讲loop", overlay: "表情_眯眼", weight: 1 },
       ],
     },
     cooldownMs: { click: 2600, doubleClick: 4000, rapidClick: 9500 },
