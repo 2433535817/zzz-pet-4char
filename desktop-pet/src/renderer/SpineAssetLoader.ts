@@ -90,7 +90,9 @@ export class SpineAssetLoader {
     ]);
 
     const version = json.skeleton?.spine ?? "";
-    if (!version.startsWith("4.2.")) {
+    // 本项目自带的角色使用 4.2 数据；4 号角色（芙宁娜）使用游戏内 4.1 模型，
+    // spine-core 4.2 运行时向后兼容 4.0/4.1 数据，这里放宽版本检查。
+    if (!/^4\.[012]/.test(version)) {
       throw new Error(`不支持的 Spine 版本：${version || "未知"}`);
     }
 
