@@ -1337,7 +1337,7 @@ pub fn run() {
             let show_qianxia2 = CheckMenuItem::with_id(
                 app,
                 "show_qianxia2",
-                "千夏四号",
+                "芙宁娜",
                 true,
                 startup_settings.pets.qianxia2.visible,
                 None::<&str>,

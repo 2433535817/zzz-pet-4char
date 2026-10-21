@@ -1,10 +1,13 @@
 import type { CharacterDefinition } from "./types";
 
-// 4 号角色：完全照搬千夏，只换 id / 显示名 / 资源目录。
+// 4 号角色：完全照搬千夏的骨架，外观已替换为芙宁娜美术稿。
 // 以后要改外观和行为，直接改本文件与 public/characters/qianxia2/。
 export const QIANXIA2: CharacterDefinition = {
   id: "qianxia2",
-  displayName: "千夏四号",
+  // 资源目录内的文件名沿用 qianxia（复制时未改名），这里显式指定，
+  // 否则加载器会去请求 qianxia2.json / qianxia2.atlas 而 404。
+  assetId: "qianxia",
+  displayName: "芙宁娜",
   assetRoot: "./characters/qianxia2",
   preferredAction: "动作_待机",
   preferredOverlay: "表情_常态",
