@@ -903,7 +903,7 @@ fn create_or_show_settings_window(app: &tauri::AppHandle) -> Result<(), String> 
         "settings",
         WebviewUrl::App("index.html?window=settings".into()),
     )
-    .title("妄想天使桌宠 · 设置")
+    .title("Furina Love · 设置")
     .inner_size(720.0, 760.0)
     .min_inner_size(640.0, 520.0)
     .center()
@@ -1419,7 +1419,7 @@ pub fn run() {
             app.manage(PetContextMenu(menu.clone()));
 
             let mut tray = TrayIconBuilder::with_id("main-tray")
-                .tooltip("妄想天使桌宠")
+                .tooltip("Furina Love")
                 .menu(&menu)
                 .show_menu_on_left_click(true)
                 .on_menu_event(move |app, event| match event.id.as_ref() {

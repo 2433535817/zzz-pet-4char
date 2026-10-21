@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "ZZZ Idol Desktop Pet",
+  "productName": "Furina Love",
   "version": "0.1.1",
   "identifier": "com.hana.zzzidolpet",
   "build": {
@@ -14,7 +14,7 @@
     "windows": [
       {
         "label": "pet-airui",
-        "title": "妄想天使桌宠",
+        "title": "Furina Love",
         "url": "index.html?window=pet&character=airui",
         "width": 520,
         "height": 600,
@@ -37,7 +37,7 @@
       },
       {
         "label": "pet-nangong",
-        "title": "妄想天使桌宠 · 南宫",
+        "title": "Furina Love · 南宫",
         "url": "index.html?window=pet&character=nangong",
         "width": 520,
         "height": 600,
@@ -60,7 +60,7 @@
       },
       {
         "label": "pet-qianxia",
-        "title": "妄想天使桌宠 · 千夏",
+        "title": "Furina Love · 千夏",
         "url": "index.html?window=pet&character=qianxia",
         "width": 520,
         "height": 600,
@@ -83,7 +83,7 @@
       },
       {
         "label": "pet-qianxia2",
-        "title": "妄想天使桌宠 · 芙宁娜",
+        "title": "Furina Love · 芙宁娜",
         "url": "index.html?window=pet&character=qianxia2",
         "width": 520,
         "height": 600,
